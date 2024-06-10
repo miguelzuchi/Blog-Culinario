@@ -7,4 +7,4 @@ juntamos nossos preparos, junto de algumas recomendações de lugares que já vi
 
 -Arquivos que começam com **R_** são aqueles destinados a receitas, podendo ser acessados através da página **Receita.html** ou através dos cards na página principal (**Index.html**);
 
--Arquivos que começam com **Rest_** são aqueles destinados as recomendações de restaurantes, podem ser acessados através da página **Recomendações**;
+-Arquivos que começam com **Rest_** são aqueles destinados as recomendações de restaurantes, podem ser acessados através da página **recomendações.html**;
