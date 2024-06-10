@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="pt">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contato</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="att.js/retornocep.js"></script>
+    <style>
+        .contato {
+            padding: 50px 0;
+        }
+
+        .contato h2 {
+            margin-bottom: 20px;
+        }
+
+        .form-control,
+        .btn-primary {
+            border-radius: 10px;
+        }
+
+        .form-control:focus {
+            box-shadow: none;
+        }
+
+        .btn-primary {
+            background-color: #ff8c00;
+            border-color: #ff8c00;
+            transition: background-color 0.3s, border-color 0.3s;
+        }
+
+        .btn-primary:hover {
+            background-color: #000000;
+            border-color: #000000;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar col-12 position-fixed navbar-expand-lg navbar-dark bg-dark py-3" style="z-index: 999;">
+        <div class="container-fluid col-11 m-auto">
+            <a class="navbar-brand" href="index.html"><img src="assets/images/cocoras.jpg" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Receitas.html">Receitas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="recomendacoes.html">Recomendações</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="QuemSomos.html">Quem somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="Contato.html">Contato</a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                    <a href="https://www.instagram.com/miguelzuchi/" target="_blank"><i class="bi bi-instagram fs-4" style="margin-right: 10px;"></i></a>
+                    <a href="https://www.linkedin.com/in/miguel-zuchi-jorge-b474b41a9" target="_blank"><i class="bi bi-linkedin fs-4" style="margin-right: 10px;"></i></a>
+                    <a href="https://www.facebook.com/miguel.jorgee" target="_blank"><i class="bi bi-facebook fs-4" style="margin-right: 10px;"></i></a>
+                    <a href="https://github.com/miguelzuchi" target="_blank"><i class="bi bi-github fs-4" style="margin-right: 10px;"></i></a>
+                </span>
+            </div>
+        </div>
+    </nav>
+    <div style="padding-top: 80px;"></div> 
+
+    <div class="container contato">
+        <h2 class="text-center mb-4" id="titulo">Contato</h2>
+        <p class="text-center" id="subtitulo">Entre em contato conosco através do formulário abaixo</p>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <form id="contactForm">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="name" placeholder="Seu nome" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">E-mail</label>
+                        <input type="email" class="form-control" id="email" placeholder="Seu email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="cep" class="form-label">CEP</label>
+                        <input type="text" class="form-control" name="cep" id="cep" placeholder="CEP" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="endereco" class="form-label">Endereço</label>
+                        <input type="text" class="form-control" name="endereco" id="endereco" placeholder="Endereço" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="cidade" class="form-label">Cidade</label>
+                        <input type="text" class="form-control" name="cidade" id="cidade" placeholder="Cidade" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="bairro" class="form-label">Bairro</label>
+                        <input type="text" class="form-control" name="bairro" id="bairro" placeholder="Bairro" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="subject" class="form-label">Assunto</label>
+                        <select class="form-select" id="subject" required>
+                            <option value="" disabled selected>Selecione um assunto</option>
+                            <option value="duvida">Dúvida</option>
+                            <option value="sugestao">Sugestão</option>
+                            <option value="reclamacao">Reclamação</option>
+                            <option value="elogio">Elogio</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Mensagem</label>
+                        <textarea class="form-control" id="message" rows="5" placeholder="Sua mensagem"
+                            required></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="button" class="btn btn-primary" id="botao">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--rodapé-->
+    <footer class="bg-dark text-light py-4 mt-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <a href="https://www.instagram.com/miguelzuchi/" target="_blank"><i style="margin-right: 10px;" class="bi bi-instagram fs-4"></i></a>
+                    <a href="https://www.linkedin.com/in/miguel-zuchi-jorge-b474b41a9" target="_blank"><i style="margin-right: 10px;" class="bi bi-linkedin fs-4"></i></a>
+                    <a href="https://www.facebook.com/miguel.jorgee" target="_blank"><i style="margin-right: 10px;" class="bi bi-facebook fs-4"></i></a>
+                    <a href="https://github.com/miguelzuchi" target="_blank"><i class="bi bi-github fs-4" style="margin-right: 10px;"></i></a>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">&copy;2024 Culinária da cócoras</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script>
+        document.getElementById('botao').addEventListener('click', function () {
+            alert('Formulároi enviado com sucesso!');
+        });
+    </script>
+</body>
+
+</html>

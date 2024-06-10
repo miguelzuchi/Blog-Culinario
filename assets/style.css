@@ -1,0 +1,133 @@
+.carousel-item img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+.bg-color{
+    background-color: #ff8c00;
+}
+#titulo{
+    padding-top: 20px;
+}
+#subtitulo{
+    display: block;
+    text-align: center;
+} 
+#card-recomendacoes{
+    max-width: 18rem;
+}
+.carousel-item img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+    body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+.navbar-brand img {
+    border-radius: 50%;
+    height: 50px;
+}
+
+.navbar-nav .nav-link {
+    margin-right: 15px;
+}
+
+.navbar-text a {
+    color: #f8f9fa;
+}
+
+.navbar-text a:hover {
+    color: #adb5bd;
+}
+
+.carousel-item img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-img-top {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    object-fit: cover;
+}
+
+footer {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+footer a {
+    color: #f8f9fa;
+}
+
+footer a:hover {
+    color: #adb5bd;
+}
+.link-pers {
+    color: black;
+    text-decoration: none;
+}
+.link-pers:hover {
+    color: black;
+}
+
+.rounded-img {
+    border-radius: 15px;
+}
+
+.outras ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.outras li {
+    margin-bottom: 1rem;
+}
+
+.outras li a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.outras li a:hover {
+    text-decoration: underline;
+}
+
+
+ .noticia {
+    transition: transform 0.4s;
+}
+
+.noticia:hover {
+    transform: scale(1.05);
+}  
+
+/*recomendacao*/
+.img-recomendacao {
+    height: 300px; /* Defina a altura desejada */
+    width: 100%; /* Largura total do contêiner pai */
+    object-fit: cover; /* Mantém a proporção da imagem e corta se necessário */
+}
