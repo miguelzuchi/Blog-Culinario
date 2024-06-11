@@ -1,11 +1,8 @@
-.carousel-item img {
+/* .carousel-item img {
     height: 300px;
     width: 100%;
     object-fit: cover;
-}
-.bg-color{
-    background-color: #ff8c00;
-}
+} */
 #titulo{
     padding-top: 20px;
 }
@@ -129,10 +126,3 @@ footer a:hover {
 .noticia:hover {
     transform: scale(1.05);
 }  
-
-/*recomendacao*/
-.img-recomendacao {
-    height: 300px; /* Defina a altura desejada */
-    width: 100%; /* Largura total do contêiner pai */
-    object-fit: cover; /* Mantém a proporção da imagem e corta se necessário */
-}
